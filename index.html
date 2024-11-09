@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Collaboration Among Foundation Models for Zero-shot Robot Manipulation.">
+  <meta name="keywords" content="Embodied Artificial Intelligence, Foundation Modell">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collaboration Among Foundation Models for Zero-shot Robot Manipulation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://sjtuplayer.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Collaboration Among Foundation Models for Zero-shot Robot Manipulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Anonymous CVPR submission</a></span>
+            <!-- <span class="author-block">
+              <a href="https://zhangzjn.github.io/">Jiangning Zhang</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="https://yiranran.github.io/">Ran Yi</a><sup>1#</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/YuzhenD">Yuzhen Du</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=1621dVIAAAAJ">Xu Chen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://orcid.org/0000-0001-7910-810X/">Liang Liu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://orcid.org/0000-0002-6592-8411/">Yabiao Wang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://orcid.org/0000-0003-4216-8090/">Chengjie Wang</a><sup>1,2</sup>
+            </span> -->
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University, Shanghai, China</span>
+            <span class="author-block"><sup>2</sup>Youtu Lab, Tencent, Shanghai, China </span>
+          </div> -->
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links"> -->
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2312.05767.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.05767"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/sjtuplayer/anomalydiffusion"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://github.com/google/nerfies/releases/tag/0.1"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="far fa-images"></i>-->
+<!--                  </span>-->
+<!--                  <span>Data</span>-->
+<!--                  </a>-->
+            <!-- </div>
+
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Intelligent robots have been widely used in many fields, which can help humans greatly improve work efficiency. 
+            However, mainstream methods tend to using imitation learning assuming there are enough expert demonstrations to train a generalist, which is costly and time-consuming. 
+            Benefiting from the development of foundation models, we propose URL, a <b>U</b>niversal-to-domain <b>R</b>einforcement <b>L</b>earning framework for zero-shot robot manipulation. 
+            Through the combination of pretrained vision language models, URL can provide multivariate zero-shot visual rewards based on the agent's observations from the environment and the text description of the task. 
+            At the same time, URL utilizes LLM as a critic in the feedback to evaluate the trajectory of the robot and return it to the policy network to help the agent improve its behavior and alleviate the illusion caused by visual rewards. 
+            Moreover, URL only uses frozen pretrained foundation models without any fine-tuning or environmental priors, which contributes to the cost of reward shaping. 
+            Experiments on MetaWorld and Franka kitchen show that URL can achieve the SOTA performance among zero-shot baselines, in which the average success rate is 31.1% higher than the best baseline. 
+            Moreover, URL could perform competitive performance compared to to one-shot methods.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+            <img src="./static/images/framework.png" class="interpolation-image" alt="Interpolate start reference image.">
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- benchmark. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Benchmark</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+            <img src="./static/images/benchmark.png" class="interpolation-image" alt="Interpolate start reference image.">
+      </div>
+    </div>
+    <!--/ benchmark. -->
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment Results</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            We first compare URL with zero-shot baselines on 9 tasks from Metaworld and Franka kitchen.
+          </p>
+        </div>
+        <div class="columns is-centered">
+            <img src="./static/images/table1.png" class="interpolation-image" alt="Interpolate start reference image.">
+      </div>
+          </div>
+        </div>
+
+    <h3 class="title is-4">Ablation Study</h3>
+        <div class="content has-text-justified">
+          <p>
+            We conduct ablation study on foundation models in URL to measure the performance of different components.
+          </p>
+          <div class="columns is-centered">
+            <!-- <div class="column is-three-fifths has-text-centered"> -->
+            <img src="./static/images/table2.png" class="interpolation-image" alt="Interpolate start reference image.">
+      <!-- </div> -->
+            </div>
+          <br/>
+          <div class="columns is-centered">
+            <!-- <div class="column is-three-fifths has-text-centered"> -->
+            <img src="./static/images/figure2.png" class="interpolation-image" alt="Interpolate start reference image.">
+      <!-- </div> -->
+            </div>
+          <div class="columns is-centered">
+            <!-- <div class="column is-three-fifths has-text-centered"> -->
+            <img src="./static/images/table3.png" class="interpolation-image" alt="Interpolate start reference image.">
+      <!-- </div> -->
+            </div>
+          <!-- <br/>
+          <div class="columns is-centered">
+            <div class="column is-three-fifths has-text-centered">
+            <img src="./static/images/table4.png" class="interpolation-image" alt="Interpolate start reference image.">
+      </div>
+            </div> -->
+        </div>
+
+    <!-- <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-justified">
+          <p>
+            We visualize the robot trajectories of different tasks.
+          </p>
+          <div class="columns is-centered">
+            <img src="./static/images/table5.png" class="interpolation-image" alt="Interpolate start reference image.">
+      </div>
+          </div> -->
+          <!-- <br/> -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- benchmark. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization</h2>
+      </div>
+    </div>
+    <!--/ benchmark. -->
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee-button.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/door-close.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/drawer-close.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/hammer.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/handle-press.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/window-open.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!-- <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{hu2023anomalydiffusion,
+  title={AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model},
+  author={Hu, Teng and Zhang, Jiangning and Yi, Ran and Du, Yuzhen and Chen, Xu and Liu, Liang and Wang, Yabiao and Wang, Chengjie},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2024}
+}
+</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            We borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> for our website.
+            We sincerely appreciate Nerfies authors for their awesome templates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
