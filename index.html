@@ -175,13 +175,14 @@
         <div class="content has-text-justified">
           <p>
             Intelligent robots have been widely used in many fields, which can help humans greatly improve work efficiency. 
-            However, mainstream methods tend to using imitation learning assuming there are enough expert demonstrations to train a generalist, which is costly and time-consuming. 
-            Benefiting from the development of foundation models, we propose URL, a <b>U</b>niversal-to-domain <b>R</b>einforcement <b>L</b>earning framework for zero-shot robot manipulation. 
+            However, mainstream methods tend to using imitation learning, assuming there are expert demonstrations to train a generalist, 
+            which is costly and time-consuming. Benefiting from the development of foundation models, we propose URL, 
+            a <b>U</b>niversal-to-domain <b>R</b>einforcement <b>L</b>earning framework for zero-shot robot manipulation. 
             Through the combination of pretrained vision language models, URL can provide multivariate zero-shot visual rewards based on the agent's observations from the environment and the text description of the task. 
-            At the same time, URL utilizes LLM as a critic in the feedback to evaluate the trajectory of the robot and return it to the policy network to help the agent improve its behavior and alleviate the illusion caused by visual rewards. 
+            At the same time, URL utilizes large language model as a critic in the feedback to evaluate the trajectory of the robot and return it to the policy network to help the agent improve its behavior and alleviate the illusion caused by visual rewards. 
             Moreover, URL only uses frozen pretrained foundation models without any fine-tuning or environmental priors, which contributes to the cost of reward shaping. 
-            Experiments on MetaWorld and Franka kitchen show that URL can achieve the SOTA performance among zero-shot baselines, in which the average success rate is 31.1% higher than the best baseline. 
-            Moreover, URL could perform competitive performance compared to to one-shot methods.
+            Experiments on MetaWorld and Franka Kitchen show that URL can achieve the SOTA performance among zero-shot baselines, in which the average success rate is 31.1\% higher than the best baseline. 
+            Moreover, URL could perform competitive performance compared to one-shot methods.
           </p>
         </div>
       </div>
